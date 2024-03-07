@@ -1,0 +1,64 @@
+{
+  "name": "jumbojs-master",
+  "version": "0.0.1",
+  "description": "JumboJS CLI and framework",
+  "private": false,
+  "homepage": "https://github.com/eaglehaki/jumbo-master.git",
+  "repository": "https://github.com/eaglehaki/jumbo-master.git",
+  "author": "Raisess 'Danilo Santana'",
+  "bin": {
+    "jumbo": "bin/jumbo"
+  },
+  "scripts": {
+    "format": "prettier --write **/*.{js,json} && standard --fix",
+    "lint": "standard",
+    "test": "jest",
+    "watch": "jest --watch",
+    "snapupdate": "jest --updateSnapshot",
+    "coverage": "jest --coverage"
+  },
+  "files": [
+    "src",
+    "framework",
+    "LICENSE",
+    "readme.md",
+    "docs",
+    "bin"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "gluegun": "latest"
+  },
+  "devDependencies": {
+    "axios": "^0.21.1",
+    "firebase": "latest",
+    "jest": "^24.1.0",
+    "mysql": "latest",
+    "prettier": "^1.12.1",
+    "standard": "^12.0.1"
+  },
+  "keywords": [
+    "express",
+    "middleware",
+    "back-end",
+    "Back-End",
+    "framework",
+    "CLI",
+    "MVC",
+    "firebase",
+    "mysql",
+    "pug"
+  ],
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  }
+}
